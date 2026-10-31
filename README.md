@@ -1,5 +1,7 @@
 # TabVault — Smart Browser Tab Manager
 
+**Live demo & download:** https://tabvault-six.vercel.app · **Source:** https://github.com/tanishqmehra22/tabvault
+
 A local-first Chrome extension (Manifest V3, vanilla HTML/CSS/JS) for saving tabs, organizing them into collections, and saving/restoring whole browsing sessions. Nothing leaves your machine: no backend, no sync, no analytics, no remote code or fonts.
 
 ## Install (unpacked)
