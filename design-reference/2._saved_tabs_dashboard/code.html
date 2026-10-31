@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#00424e","error-container":"#93000a","on-tertiary-container":"#00311f","primary":"#adc6ff","surface-variant":"#2d3449","outline-variant":"#424754","on-surface":"#dae2fd","primary-fixed-dim":"#adc6ff","tertiary-fixed":"#6ffbbe","inverse-primary":"#005ac2","on-primary-fixed":"#001a42","surface-container":"#171f33","surface-tint":"#adc6ff","surface-container-high":"#222a3d","tertiary":"#4edea3","on-primary-container":"#00285d","surface-container-lowest":"#060e20","outline":"#8c909f","tertiary-fixed-dim":"#4edea3","inverse-on-surface":"#283044","on-tertiary":"#003824","on-primary":"#002e6a","secondary-fixed-dim":"#4cd7f6","on-error":"#690005","secondary-container":"#03b5d3","on-secondary-fixed-variant":"#004e5c","surface-bright":"#31394d","on-tertiary-fixed":"#002113","error":"#ffb4ab","background":"#0b1326","on-surface-variant":"#c2c6d6","on-primary-fixed-variant":"#004395","surface-container-highest":"#2d3449","inverse-surface":"#dae2fd","surface-container-low":"#131b2e","tertiary-container":"#00a572","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#005236","on-secondary-fixed":"#001f26","primary-fixed":"#d8e2ff","on-background":"#dae2fd","surface-dim":"#0b1326","secondary":"#4cd7f6","primary-container":"#4d8eff","on-secondary":"#003640","secondary-fixed":"#acedff","surface":"#0b1326"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","margin-compact":"0.75rem","space-xs":"0.25rem","space-xl":"2rem","space-lg":"1.25rem","space-md":"0.75rem","gutter-compact":"0.5rem","gutter":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["14px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container/40"><div class="flex items-center gap-space-sm"><img alt="TabVault Geometric Vault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgLXQHtO7A5BAd8lUHKeDNWF6invRq5ptAUvFvWHCvnvAHOUniz3_vaviO8j8YQuiFVM-RGMD9sH5sNU_RAWsk7Vg4Bhg99XTqTFqdYKbMw6rVMp-KIvIt4oA05Zy-pr0-5MFScXSnmqbKB756eGhlBDJnqEyyb3b7gTvkvc87_2eRtZtB7UlTmvWirZGTF9Bjl70t_L6AVuBQXBd7aLzoZjCLhcMq2rIscFxPdYwk"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">TabVault</span></div><span class="material-symbols-outlined text-outline text-lg cursor-pointer hover:text-on-surface transition-colors">keyboard_double_arrow_left</span></div><div class="p-space-md"><button class="w-full flex items-center justify-between p-space-sm rounded-xl bg-surface-container-high/60 hover:bg-surface-container-highest transition-colors text-left"><div class="flex items-center gap-space-sm min-w-0"><div class="w-6 h-6 rounded bg-primary/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-sm">folder_special</span></div><div class="truncate"><div class="font-label-sm text-label-sm text-on-surface truncate">Alex's Research Vault</div><div class="font-label-sm text-label-sm text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Active Workspace</div></div></div><span class="material-symbols-outlined text-outline text-sm">unfold_more</span></button><div class="mt-space-sm grid grid-cols-2 gap-space-xs"><div class="p-space-xs rounded-lg bg-surface-container/60 text-center"><div class="font-label-sm text-label-sm text-outline">Tabs Saved</div><div class="font-headline-sm text-headline-sm text-primary">148</div></div><div class="p-space-xs rounded-lg bg-surface-container/60 text-center"><div class="font-label-sm text-label-sm text-outline">Sessions</div><div class="font-headline-sm text-headline-sm text-secondary">12</div></div></div></div><nav class="px-space-md space-y-space-xs flex-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="all-saved-tabs" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">tab</span><span class="font-body-md text-body-md">All Saved Tabs</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">148</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="collections" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">collections_bookmark</span><span class="font-body-md text-body-md">Collections</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sessions" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">history</span><span class="font-body-md text-body-md">Sessions</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="favorites" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">star</span><span class="font-body-md text-body-md">Favorites</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">24</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="search-duplicate-finder" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">find_replace</span><span class="font-body-md text-body-md">Search & Duplicate Finder</span></div><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">⌘K</kbd></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-lowest/70 backdrop-blur-md"><div class="flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container/50 hover:bg-surface-container-high/60 transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_hXtio56QjdNhml6dKNjbmOfhEp3oUNe3sHSekAq9M5K4F-QaUbGbS-u9EFsjxUF7IISH4JLU10_fk7rt7dRQEv12ekYkzWHgDUyxoHVcG0_Krof8HPMnT8McPmNRjBDm8btxOm5ur6pDR-WNfsavslLH1m5fSWZ5aXfOWJoPuO1TMG_-W1vFsSD0E2zSS9kmx21MqDJAHsonzhd5e3hB7pXXyU9G_BjdpE49MbGs"/><div class="min-w-0 flex-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Alex Vance</span><span class="material-symbols-outlined text-outline text-xs cursor-pointer hover:text-on-surface">more_vert</span></div><div class="font-label-sm text-label-sm text-secondary truncate">Pro Vault Active</div></div></div><div class="mt-space-xs flex items-center justify-between px-space-xs text-outline font-label-sm text-label-sm"><div class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-xs">lock</span><span>Local-First Encrypted</span></div><span class="material-symbols-outlined text-xs text-outline">cloud_done</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-base">search</span><input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Filter active workspace, domains, or tabs..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1"><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">⌘F</kbd></div></div></div><div class="flex items-center gap-space-md shrink-0"><button class="h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors"><span class="material-symbols-outlined text-sm text-secondary">preview</span><span>Open Extension Popup</span></button><button class="h-9 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim font-label-md text-label-md font-semibold flex items-center gap-space-xs transition-colors shadow-sm"><span class="material-symbols-outlined text-sm font-bold">add</span><span>+ Quick Save Current Window</span></button><div class="h-5 w-px bg-outline-variant/40 mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-base">notifications</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-base">help</span></button></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="relative px-margin py-space-lg space-y-space-lg overflow-hidden">
+<!-- Chromatic Ambient Glow -->
+<div class="absolute -top-32 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 -right-20 w-[420px] h-[420px] bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Page Header & Metrics Strip -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-sm text-code-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            Tab Vault Core
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-outline">WORKSPACE://ALL_SAVED</span>
+</div>
+<div class="flex items-center gap-space-md">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">All Saved Tabs</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-headline-sm text-headline-sm shadow-sm">148 tabs</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Manage, search, organize, and restore your archived browser tabs across all sessions with low-latency recall.
+        </p>
+</div>
+<!-- Quick Metrics Glance Mini-bar -->
+<div class="flex items-center gap-space-sm bg-surface-container/70 p-space-xs rounded-xl backdrop-blur-md self-start lg:self-auto shadow-sm">
+<div class="px-space-sm py-1 rounded-lg bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-base">memory</span>
+<div>
+<div class="font-code-sm text-code-sm text-outline">RAM Liberated</div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">-2.4 GB</div>
+</div>
+</div>
+<div class="px-space-sm py-1 rounded-lg bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
+<div>
+<div class="font-code-sm text-code-sm text-outline">Deduplicated</div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">19 Tabs</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Controls Toolbar (Search, Filters, Sort, View Modes) -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low/80 p-space-sm rounded-xl backdrop-blur-md shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Filter Controls Group -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Collection Filter -->
+<div class="relative group">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-sm text-secondary">folder_open</span>
+<span>All Collections</span>
+<span class="material-symbols-outlined text-xs text-outline">expand_more</span>
+</button>
+</div>
+<!-- Domain Filter -->
+<div class="relative">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-sm text-primary">public</span>
+<span>Domain: Any</span>
+<span class="material-symbols-outlined text-xs text-outline">expand_more</span>
+</button>
+</div>
+<!-- Date Added Filter -->
+<div class="relative">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-sm text-tertiary">calendar_today</span>
+<span>Date: All Time</span>
+<span class="material-symbols-outlined text-xs text-outline">expand_more</span>
+</button>
+</div>
+<!-- Sort Filter -->
+<div class="relative">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-sm text-outline">swap_vert</span>
+<span>Recently Saved</span>
+<span class="material-symbols-outlined text-xs text-outline">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Macro Operations & View Switches -->
+<div class="flex items-center gap-space-xs ml-auto">
+<!-- View Switcher -->
+<div class="flex items-center bg-surface-container-lowest/80 p-0.5 rounded-lg">
+<button class="w-7 h-7 rounded flex items-center justify-center bg-surface-container-highest text-primary transition-colors" id="viewGridBtn" title="Grid View">
+<span class="material-symbols-outlined text-sm">grid_view</span>
+</button>
+<button class="w-7 h-7 rounded flex items-center justify-center text-outline hover:text-on-surface transition-colors" id="viewListBtn" title="List View">
+<span class="material-symbols-outlined text-sm">format_list_bulleted</span>
+</button>
+</div>
+<div class="h-4 w-px bg-outline-variant/30 mx-1"></div>
+<!-- Quick Action Buttons -->
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-xs text-secondary">file_download</span>
+<span>Export JSON</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-xs text-primary">add_link</span>
+<span>+ Add URL</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 hover:bg-primary-fixed-dim transition-all shadow-sm">
+<span class="material-symbols-outlined text-xs font-bold">bolt</span>
+<span>Restore Selected</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sticky Subtle Batch Selection Action Bar -->
+<div class="sticky top-20 z-30 flex items-center justify-between px-space-md py-2.5 rounded-xl bg-surface-container-high/95 backdrop-blur-xl shadow-xl transition-all" id="batchBar">
+<div class="flex items-center gap-space-sm">
+<div class="w-5 h-5 rounded bg-primary/20 flex items-center justify-center text-primary font-code-sm text-code-sm font-bold">
+          3
+        </div>
+<span class="font-headline-sm text-headline-sm text-on-surface">3 tabs selected</span>
+<span class="font-label-sm text-label-sm text-outline hidden md:inline">• 12.8 MB memory snapshot</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-7 px-space-sm rounded-lg bg-primary-container text-on-primary-container hover:bg-primary transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+<span>Restore All in New Window</span>
+</button>
+<button class="h-7 px-space-sm rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-bright transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">drive_file_move</span>
+<span>Move to Collection</span>
+<span class="material-symbols-outlined text-xs">arrow_drop_down</span>
+</button>
+<button class="h-7 px-space-sm rounded-lg bg-surface-container-highest text-on-surface hover:bg-surface-bright transition-colors font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-tertiary">label</span>
+<span>Add Tag</span>
+</button>
+<div class="h-4 w-px bg-outline-variant/40 mx-0.5"></div>
+<button class="h-7 w-7 rounded-lg bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-outline transition-colors flex items-center justify-center" title="Delete Selected">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+<button class="h-7 w-7 rounded-lg hover:bg-surface-container-highest text-outline hover:text-on-surface transition-colors flex items-center justify-center" id="clearSelectionBtn" title="Deselect All">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</div>
+</div>
+<!-- Main Tab Items Grid Layout (Responsive Bento Density) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-sm" id="tabsContainer">
+<!-- Card 1: Linear Method (Selected State) -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-high/80 hover:bg-surface-container-highest transition-all duration-200 shadow-md">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary rounded-l-xl"></div>
+<div class="space-y-space-sm">
+<!-- Card Header / Meta -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<!-- Favicon Container -->
+<div class="w-6 h-6 rounded-lg bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm">view_timeline</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">linear.app/docs</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">4m ago</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-primary" title="Starred">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<!-- Title & Preview Excerpt -->
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Linear Method — Product Management & Issues
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Practices for building high-momentum software teams, cycle planning, and fast triage workflows.
+            </p>
+</div>
+<!-- Collection & Tag Chips -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Development
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              #workflow
+            </span>
+</div>
+</div>
+<!-- Action Strip Bottom -->
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">memory</span> 18MB
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors" title="Move">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors" title="Trash">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Nature Articles (Selected State) -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-high/80 hover:bg-surface-container-highest transition-all duration-200 shadow-md">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary rounded-l-xl"></div>
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-sm">science</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">nature.com/articles</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">1h ago</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-primary" title="Starred">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors line-clamp-1">
+              Quantum Computing Architectures for Fault-Tolerant Systems
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Experimental surface code validation across superconducting arrays with continuous syndrome extraction.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              College Research
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              #quantum
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">picture_as_pdf</span> PDF Available
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Astral UV (Selected State) -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-high/80 hover:bg-surface-container-highest transition-all duration-200 shadow-md">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-tertiary rounded-l-xl"></div>
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-sm">code</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">github.com/astral-sh/uv</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">2h ago</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-outline hover:text-primary" title="Star">
+<span class="material-symbols-outlined text-xs">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors line-clamp-1">
+              Extremely fast Python package and project manager
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Written in Rust. 10-100x faster than pip. Lockfiles, workspace resolver, and Python interpreter manager.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Development
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              ★ 34.2k
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">commit</span> git main
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Lever Stripe (Unselected) -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 shadow-sm hover:shadow-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-sm">badge</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">lever.co/stripe</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">4h ago</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-primary" title="Starred">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Senior Staff Frontend Architect - Core Product
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Stripe Dashboard, financial infrastructure, design systems coordination, and developer velocity.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Job Applications
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              #careers
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-tertiary">attach_money</span> San Francisco / Remote
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Overleaf Project -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 shadow-sm hover:shadow-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-sm">article</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">overleaf.com/project/664</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">Yesterday</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-outline hover:text-primary" title="Star">
+<span class="material-symbols-outlined text-xs">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Distributed Consensus Paper Draft v3.2
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Formal verification using TLA+ and raft leader election benchmarking under partition scenarios.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              College Research
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              LaTeX
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">group</span> 3 Collaborators
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Hacker News -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 shadow-sm hover:shadow-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">forum</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">news.ycombinator.com</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">Yesterday</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-outline hover:text-primary" title="Star">
+<span class="material-symbols-outlined text-xs">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Show HN: Building a Local-First Browser Extension
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Architecting SQLite on OPFS (Origin Private File System) inside Chromium service workers without server sync.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Reading List
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              184 pts
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">chat_bubble_outline</span> 92 comments
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 7: Chrome Developer -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 shadow-sm hover:shadow-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm">terminal</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">developer.chrome.com</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">2d ago</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-outline hover:text-primary" title="Star">
+<span class="material-symbols-outlined text-xs">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Manifest V3 Migration Guide & Tab Groups API
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Managing tab hierarchy, programmatic session groups, and surviving service worker dormancy cycles.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Development
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              Docs
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span> Verified MV3
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8: Figma Design System (Starred) -->
+<div class="group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 shadow-sm hover:shadow-md">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-2 min-w-0">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="w-6 h-6 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-sm">palette</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline truncate">figma.com/file/vault</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-code-sm text-code-sm text-outline">3d ago</span>
+<button class="w-6 h-6 rounded hover:bg-surface-bright flex items-center justify-center text-primary" title="Starred">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Arc & Linear Minimalist Workspace UI Kit
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Design tokens, frosted surfaces, micro-interactions, dark glass physics, and typography hierarchy.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+              Design
+            </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/60 font-code-sm text-code-sm text-outline">
+              v2.4
+            </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">layers</span> 48 Components
+          </span>
+<div class="flex items-center gap-1">
+<button class="h-6 px-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface flex items-center gap-1 transition-colors">
+<span>Open</span>
+<span class="material-symbols-outlined text-[10px]">open_in_new</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span>
+</button>
+<button class="h-6 w-6 rounded hover:bg-error-container hover:text-on-error-container flex items-center justify-center text-outline transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Dashboard Insight Bento Strip -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md pt-space-sm">
+<!-- Domain Distribution Mini Chart -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 backdrop-blur-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">pie_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Top Domains Saved</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">84 Unique Hosts</span>
+</div>
+<!-- Inline Micro SVG Chart -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary"></span>github.com</span>
+<span class="text-outline font-code-sm text-code-sm">34 tabs (23%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 23%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-1">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>arxiv.org & nature</span>
+<span class="text-outline font-code-sm text-code-sm">28 tabs (19%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 19%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-1">
+<span class="text-on-surface flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span>docs.google.com</span>
+<span class="text-outline font-code-sm text-code-sm">18 tabs (12%)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 12%;"></div>
+</div>
+</div>
+</div>
+<!-- Session Activity Timeline Visual -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 backdrop-blur-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-base">monitoring</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Weekly Archive Velocity</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">+38 this week</span>
+</div>
+<!-- SVG Sparkline Curve -->
+<div class="w-full py-2">
+<svg class="w-full h-14 overflow-visible" fill="none" viewbox="0 0 300 60">
+<defs>
+<lineargradient id="curveGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4edea3" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#4edea3" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,45 C40,48 70,30 110,35 C150,40 180,10 220,15 C260,20 280,5 300,8 L300,60 L0,60 Z" fill="url(#curveGradient)"></path>
+<path d="M0,45 C40,48 70,30 110,35 C150,40 180,10 220,15 C260,20 280,5 300,8" stroke="#4edea3" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="220" cy="15" fill="#4edea3" r="3.5" stroke="#131b2e" stroke-width="2"></circle>
+<circle cx="300" cy="8" fill="#6ffbbe" r="3.5" stroke="#131b2e" stroke-width="2"></circle>
+</svg>
+<div class="flex justify-between font-code-sm text-code-sm text-outline mt-1">
+<span>Mon</span>
+<span>Wed</span>
+<span>Fri</span>
+<span>Today</span>
+</div>
+</div>
+</div>
+<!-- Hotkey & Fast Tip Pro Card -->
+<div class="p-space-md rounded-xl bg-gradient-to-br from-surface-container/90 via-surface-container-low to-surface-container-high/60 backdrop-blur-md flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-1.5 text-primary mb-space-xs">
+<span class="material-symbols-outlined text-sm">lightbulb</span>
+<span class="font-code-sm text-code-sm uppercase tracking-wider font-semibold">Pro Power Tip</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Archive Entire Window Instantly</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Never worry about tab clutter slowing your processor down during peak research sessions.
+          </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5">
+<kbd class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm shadow-sm">⌘</kbd>
+<span class="text-outline">+</span>
+<kbd class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm shadow-sm">Shift</kbd>
+<span class="text-outline">+</span>
+<kbd class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm shadow-sm">S</kbd>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors flex items-center gap-0.5">
+<span>Customize</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination & Infinite Scroll Footer Strip -->
+<div class="pt-space-md pb-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">Showing <strong class="text-on-surface font-semibold">8</strong> of <strong class="text-on-surface font-semibold">148</strong> saved tabs</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+          Indexed locally
+        </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-lg rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-sm">
+<span class="material-symbols-outlined text-sm text-secondary">expand_more</span>
+<span>Load Next 50 Tabs</span>
+</button>
+<button class="h-9 w-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-outline hover:text-on-surface flex items-center justify-center transition-colors" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple view switcher micro-interaction
+  const viewGridBtn = document.getElementById('viewGridBtn');
+  const viewListBtn = document.getElementById('viewListBtn');
+  const tabsContainer = document.getElementById('tabsContainer');
+  const batchBar = document.getElementById('batchBar');
+  const clearSelectionBtn = document.getElementById('clearSelectionBtn');
+
+  if (viewGridBtn && viewListBtn && tabsContainer) {
+    viewGridBtn.addEventListener('click', () => {
+      tabsContainer.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-sm';
+      viewGridBtn.className = 'w-7 h-7 rounded flex items-center justify-center bg-surface-container-highest text-primary transition-colors';
+      viewListBtn.className = 'w-7 h-7 rounded flex items-center justify-center text-outline hover:text-on-surface transition-colors';
+    });
+
+    viewListBtn.addEventListener('click', () => {
+      tabsContainer.className = 'grid grid-cols-1 gap-space-xs';
+      viewListBtn.className = 'w-7 h-7 rounded flex items-center justify-center bg-surface-container-highest text-primary transition-colors';
+      viewGridBtn.className = 'w-7 h-7 rounded flex items-center justify-center text-outline hover:text-on-surface transition-colors';
+    });
+  }
+
+  if (clearSelectionBtn && batchBar) {
+    clearSelectionBtn.addEventListener('click', () => {
+      document.querySelectorAll('#tabsContainer input[type="checkbox"]').forEach(cb => cb.checked = false);
+      batchBar.style.display = 'none';
+    });
+  }
+</script></main></div></body></html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#00424e","error-container":"#93000a","on-tertiary-container":"#00311f","primary":"#adc6ff","surface-variant":"#2d3449","outline-variant":"#424754","on-surface":"#dae2fd","primary-fixed-dim":"#adc6ff","tertiary-fixed":"#6ffbbe","inverse-primary":"#005ac2","on-primary-fixed":"#001a42","surface-container":"#171f33","surface-tint":"#adc6ff","surface-container-high":"#222a3d","tertiary":"#4edea3","on-primary-container":"#00285d","surface-container-lowest":"#060e20","outline":"#8c909f","tertiary-fixed-dim":"#4edea3","inverse-on-surface":"#283044","on-tertiary":"#003824","on-primary":"#002e6a","secondary-fixed-dim":"#4cd7f6","on-error":"#690005","secondary-container":"#03b5d3","on-secondary-fixed-variant":"#004e5c","surface-bright":"#31394d","on-tertiary-fixed":"#002113","error":"#ffb4ab","background":"#0b1326","on-surface-variant":"#c2c6d6","on-primary-fixed-variant":"#004395","surface-container-highest":"#2d3449","inverse-surface":"#dae2fd","surface-container-low":"#131b2e","tertiary-container":"#00a572","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#005236","on-secondary-fixed":"#001f26","primary-fixed":"#d8e2ff","on-background":"#dae2fd","surface-dim":"#0b1326","secondary":"#4cd7f6","primary-container":"#4d8eff","on-secondary":"#003640","secondary-fixed":"#acedff","surface":"#0b1326"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","margin-compact":"0.75rem","space-xs":"0.25rem","space-xl":"2rem","space-lg":"1.25rem","space-md":"0.75rem","gutter-compact":"0.5rem","gutter":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["14px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container/40"><div class="flex items-center gap-space-sm"><img alt="TabVault Geometric Vault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgLXQHtO7A5BAd8lUHKeDNWF6invRq5ptAUvFvWHCvnvAHOUniz3_vaviO8j8YQuiFVM-RGMD9sH5sNU_RAWsk7Vg4Bhg99XTqTFqdYKbMw6rVMp-KIvIt4oA05Zy-pr0-5MFScXSnmqbKB756eGhlBDJnqEyyb3b7gTvkvc87_2eRtZtB7UlTmvWirZGTF9Bjl70t_L6AVuBQXBd7aLzoZjCLhcMq2rIscFxPdYwk"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">TabVault</span></div><span class="material-symbols-outlined text-outline text-lg cursor-pointer hover:text-on-surface transition-colors">keyboard_double_arrow_left</span></div><div class="p-space-md"><button class="w-full flex items-center justify-between p-space-sm rounded-xl bg-surface-container-high/60 hover:bg-surface-container-highest transition-colors text-left"><div class="flex items-center gap-space-sm min-w-0"><div class="w-6 h-6 rounded bg-primary/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-sm">folder_special</span></div><div class="truncate"><div class="font-label-sm text-label-sm text-on-surface truncate">Alex's Research Vault</div><div class="font-label-sm text-label-sm text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Active Workspace</div></div></div><span class="material-symbols-outlined text-outline text-sm">unfold_more</span></button><div class="mt-space-sm grid grid-cols-2 gap-space-xs"><div class="p-space-xs rounded-lg bg-surface-container/60 text-center"><div class="font-label-sm text-label-sm text-outline">Tabs Saved</div><div class="font-headline-sm text-headline-sm text-primary">148</div></div><div class="p-space-xs rounded-lg bg-surface-container/60 text-center"><div class="font-label-sm text-label-sm text-outline">Sessions</div><div class="font-headline-sm text-headline-sm text-secondary">12</div></div></div></div><nav class="px-space-md space-y-space-xs flex-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="all-saved-tabs" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">tab</span><span class="font-body-md text-body-md">All Saved Tabs</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">148</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="collections" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">collections_bookmark</span><span class="font-body-md text-body-md">Collections</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sessions" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">history</span><span class="font-body-md text-body-md">Sessions</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="favorites" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">star</span><span class="font-body-md text-body-md">Favorites</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">24</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="search-duplicate-finder" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">find_replace</span><span class="font-body-md text-body-md">Search &amp; Duplicate Finder</span></div><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">⌘K</kbd></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-lowest/70 backdrop-blur-md"><div class="flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container/50 hover:bg-surface-container-high/60 transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_hXtio56QjdNhml6dKNjbmOfhEp3oUNe3sHSekAq9M5K4F-QaUbGbS-u9EFsjxUF7IISH4JLU10_fk7rt7dRQEv12ekYkzWHgDUyxoHVcG0_Krof8HPMnT8McPmNRjBDm8btxOm5ur6pDR-WNfsavslLH1m5fSWZ5aXfOWJoPuO1TMG_-W1vFsSD0E2zSS9kmx21MqDJAHsonzhd5e3hB7pXXyU9G_BjdpE49MbGs"/><div class="min-w-0 flex-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Alex Vance</span><span class="material-symbols-outlined text-outline text-xs cursor-pointer hover:text-on-surface">more_vert</span></div><div class="font-label-sm text-label-sm text-secondary truncate">Pro Vault Active</div></div></div><div class="mt-space-xs flex items-center justify-between px-space-xs text-outline font-label-sm text-label-sm"><div class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-xs">lock</span><span>Local-First Encrypted</span></div><span class="material-symbols-outlined text-xs text-outline">cloud_done</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-base">search</span><input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Filter active workspace, domains, or tabs..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1"><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">⌘F</kbd></div></div></div><div class="flex items-center gap-space-md shrink-0"><button class="h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors"><span class="material-symbols-outlined text-sm text-secondary">preview</span><span>Open Extension Popup</span></button><button class="h-9 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim font-label-md text-label-md font-semibold flex items-center gap-space-xs transition-colors shadow-sm"><span class="material-symbols-outlined text-sm font-bold">add</span><span>+ Quick Save Current Window</span></button><div class="h-5 w-px bg-outline-variant/40 mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-base">notifications</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-base">help</span></button></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="relative px-space-lg py-space-xl overflow-hidden">
+<div class="absolute -top-32 -right-20 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 left-1/3 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm mb-space-xl relative z-10">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm uppercase tracking-wider text-secondary">
+<span>TabVault</span>
+<span class="text-outline">/</span>
+<span>Search &amp; Deduplication</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary mx-1 animate-pulse"></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded-full">Engine v2.4 Active</span>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center flex-wrap gap-space-sm">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Search &amp; Duplicate Finder</h1>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm border-0 shadow-sm">
+<span class="material-symbols-outlined text-sm">filter_none</span>
+              3 Duplicate Clusters (19 Tabs)
+            </span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Fuzzy search across 148 archived tabs and detect identical URLs or cross-session duplicates to optimize vault storage.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-9 px-space-md rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-transform active:scale-95 shadow-sm" id="exportBtn">
+<span class="material-symbols-outlined text-base text-outline">file_download</span>
+<span>Export Search Results</span>
+<kbd class="ml-1 px-1.5 py-0.5 rounded bg-surface-container-lowest font-code-sm text-code-sm text-outline">⌘E</kbd>
+</button>
+<button class="h-9 px-space-md rounded-xl bg-primary text-on-primary hover:bg-primary-fixed font-label-md text-label-md font-semibold flex items-center gap-space-xs transition-transform active:scale-95 shadow-md" id="cleanAllDuplicatesBtn">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span>Clean All Duplicates</span>
+<span class="text-on-primary/80 font-code-sm text-code-sm bg-on-primary/20 px-1.5 py-0.5 rounded">Free 420 MB</span>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg relative z-10">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-outline">Identical URL Repetitions</span>
+<div class="font-headline-lg text-headline-lg text-secondary">19 Tabs</div>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_down</span>
+            3 separate clusters found
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">copy_all</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-outline">Reclaimable Memory</span>
+<div class="font-headline-lg text-headline-lg text-primary">420.4 MB</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Est. 28% background usage</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">memory</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-outline">Cross-Session Redundancy</span>
+<div class="font-headline-lg text-headline-lg text-tertiary">91.4%</div>
+<span class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+            High confidence match
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">insights</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm mb-space-xl space-y-space-md relative z-10">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-secondary text-lg">search</span>
+<input class="w-full h-11 pl-11 pr-24 rounded-xl bg-surface-container-high text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest shadow-inner transition-colors" id="searchInput" placeholder="Search title, URL, tag, or session..." type="text" value="arxiv OR github"/>
+<div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1.5">
+<button class="text-outline hover:text-on-surface transition-colors p-1" id="clearSearchBtn" title="Clear query">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-code-sm text-code-sm text-outline shadow-sm">Esc</kbd>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high p-1 rounded-xl shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-highest text-secondary font-label-md text-label-md font-semibold flex items-center gap-space-xs transition-colors shadow-sm" id="viewDuplicatesTab">
+<span class="material-symbols-outlined text-sm">difference</span>
+<span>Duplicate Clusters</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary text-on-secondary font-code-sm text-code-sm font-bold">3 Active</span>
+</button>
+<button class="h-9 px-space-md rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" id="viewAllTab">
+<span class="material-symbols-outlined text-sm">format_list_bulleted</span>
+<span>All Results</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest text-outline font-code-sm text-code-sm">148</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline mr-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">filter_alt</span> Collections:
+          </span>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-outline hover:text-on-surface font-label-sm text-label-sm transition-colors">All (148)</button>
+<button class="px-2.5 py-1 rounded-lg bg-primary/20 text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> College Research (34)
+          </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-outline hover:text-on-surface font-label-sm text-label-sm transition-colors">
+            Dev &amp; Engineering (52)
+          </button>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">public</span>
+<span>Domain:</span>
+<span class="text-on-surface">arxiv.org, github.com</span>
+<span class="material-symbols-outlined text-xs cursor-pointer hover:text-on-surface">expand_more</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-lg text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">calendar_today</span>
+<span>Date:</span>
+<span class="text-on-surface">Past 30 Days</span>
+<span class="material-symbols-outlined text-xs cursor-pointer hover:text-on-surface">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<section class="space-y-space-md mb-space-xl relative z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Active Deduplication Clusters</h2>
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">Exact &amp; Fuzzy Match Mode</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline">
+          Showing 3 detected groups requiring resolution
+        </div>
+</div>
+<div class="p-space-lg rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">auto_fix_high</span>
+</div>
+<div class="space-y-0.5">
+<div class="font-headline-sm text-headline-sm text-on-surface">Deduplication Engine Recommendation</div>
+<div class="font-body-md text-body-md text-on-surface-variant">
+              Found 19 duplicate tab instances across 3 distinct URL clusters. Keeping the newest copy of each will free up <span class="text-secondary font-semibold">420 MB</span> of browser memory without losing tags or session references.
+            </div>
+</div>
+</div>
+<button class="shrink-0 h-9 px-space-md rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-transform active:scale-95 shadow-sm" id="resolveAllAutoBtn">
+<span class="material-symbols-outlined text-sm font-bold">check_circle</span>
+<span>Apply Smart Auto-Resolution</span>
+</button>
+</div>
+<div class="space-y-space-md" id="clustersContainer">
+<div class="rounded-xl bg-surface-container-low shadow-sm overflow-hidden" id="cluster-1">
+<div class="p-space-md bg-surface-container-high flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base">article</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Demonstration of fault-tolerant quantum error correction</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-code-sm text-code-sm">4 Duplicates</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm">Saves 222 MB</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate hover:text-secondary cursor-pointer transition-colors">
+                  https://<span class="text-secondary font-bold">arxiv</span>.org/abs/2304.09821
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="cluster-action-btn h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" data-target="cluster-1">
+<span class="material-symbols-outlined text-xs">merge_type</span>
+<span>Merge &amp; Deduplicate</span>
+</button>
+<button class="keep-latest-btn h-8 px-space-sm rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" data-target="cluster-1">
+<span class="material-symbols-outlined text-xs font-bold">done_all</span>
+<span>Keep Latest &amp; Close (3)</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm divide-y-0 space-y-1">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/40 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-tertiary text-sm">star</span>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Quantum Fault Tolerance Paper (Annotated Version)</span>
+<span class="font-code-sm text-code-sm px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-semibold">Latest Active</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 12 mins ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: College Research</span>
+<span>•</span>
+<span class="text-outline font-code-sm text-code-sm">Session #12</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">74 MB RAM</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Designated Keeper
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/20 hover:bg-surface-container-high transition-colors opacity-80 hover:opacity-100">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-sm">content_copy</span>
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">arXiv:2304.09821v2 [quant-ph]</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved Yesterday, 4:21 PM</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Yesterday's Session</span>
+<span>•</span>
+<span class="text-outline font-code-sm text-code-sm">Session #11</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">74 MB RAM</span>
+<button class="single-close-btn p-1 rounded hover:bg-error-container text-outline hover:text-error transition-colors" title="Drop redundant tab">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/20 hover:bg-surface-container-high transition-colors opacity-80 hover:opacity-100">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-sm">content_copy</span>
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">[PDF View] Demonstration of fault-tolerant quantum error correction</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 4 days ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Unsorted Quick Stash</span>
+<span>•</span>
+<span class="text-outline font-code-sm text-code-sm">Session #09</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">74 MB RAM</span>
+<button class="single-close-btn p-1 rounded hover:bg-error-container text-outline hover:text-error transition-colors" title="Drop redundant tab">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/20 hover:bg-surface-container-high transition-colors opacity-80 hover:opacity-100">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-sm">content_copy</span>
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">arXiv.org: Fault tolerant quantum architecture review</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 12 days ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: College Research</span>
+<span>•</span>
+<span class="text-outline font-code-sm text-code-sm">Session #04</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">74 MB RAM</span>
+<button class="single-close-btn p-1 rounded hover:bg-error-container text-outline hover:text-error transition-colors" title="Drop redundant tab">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low shadow-sm overflow-hidden" id="cluster-2">
+<div class="p-space-md bg-surface-container-high flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-base">code</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">astral-sh/uv: An extremely fast Python package and project manager</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-code-sm text-code-sm">3 Duplicates</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm">Saves 110 MB</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate hover:text-secondary cursor-pointer transition-colors">
+                  https://<span class="text-secondary font-bold">github</span>.com/astral-sh/uv
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="cluster-action-btn h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" data-target="cluster-2">
+<span class="material-symbols-outlined text-xs">merge_type</span>
+<span>Merge Metadata</span>
+</button>
+<button class="keep-latest-btn h-8 px-space-sm rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" data-target="cluster-2">
+<span class="material-symbols-outlined text-xs font-bold">done_all</span>
+<span>Keep Latest &amp; Close Others</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm space-y-1">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/40 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-tertiary text-sm">star</span>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">GitHub - astral-sh/uv: Python tooling written in Rust</span>
+<span class="font-code-sm text-code-sm px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-semibold">Latest Active</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved Today 9:15 AM</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Dev &amp; Engineering</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">55 MB RAM</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Target Copy
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/20 hover:bg-surface-container-high transition-colors opacity-80 hover:opacity-100">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-sm">content_copy</span>
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">uv Python package manager on GitHub repo</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 3 days ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Quick Save</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">55 MB RAM</span>
+<button class="single-close-btn p-1 rounded hover:bg-error-container text-outline hover:text-error transition-colors" title="Drop redundant tab">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/20 hover:bg-surface-container-high transition-colors opacity-80 hover:opacity-100">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-sm">content_copy</span>
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">astral-sh/uv README quickstart &amp; benchmark</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 8 days ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Dev &amp; Engineering</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">55 MB RAM</span>
+<button class="single-close-btn p-1 rounded hover:bg-error-container text-outline hover:text-error transition-colors" title="Drop redundant tab">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low shadow-sm overflow-hidden" id="cluster-3">
+<div class="p-space-md bg-surface-container-high flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-base">task_alt</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Linear Features — Purpose-built tool for modern software development</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-code-sm text-code-sm">2 Duplicates</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm">Saves 88 MB</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate hover:text-secondary cursor-pointer transition-colors">
+                  https://linear.app/features
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="cluster-action-btn h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" data-target="cluster-3">
+<span class="material-symbols-outlined text-xs">merge_type</span>
+<span>Merge</span>
+</button>
+<button class="keep-latest-btn h-8 px-space-sm rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" data-target="cluster-3">
+<span class="material-symbols-outlined text-xs font-bold">done_all</span>
+<span>Keep Latest &amp; Close Redundant</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm space-y-1">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/40 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-tertiary text-sm">star</span>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface font-medium truncate">Linear Product Overview &amp; Project Cycles</span>
+<span class="font-code-sm text-code-sm px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-semibold">Latest Active</span>
+</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 5 hours ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Dev &amp; Engineering</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">88 MB RAM</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Active Instance
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/20 hover:bg-surface-container-high transition-colors opacity-80 hover:opacity-100">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-outline text-sm">content_copy</span>
+<div class="min-w-0">
+<div class="font-body-md text-body-md text-on-surface truncate">Features | Linear App</div>
+<div class="font-body-sm text-body-sm text-outline flex items-center gap-2">
+<span>Saved 14 days ago</span>
+<span>•</span>
+<span class="text-on-surface-variant">Workspace: Product Inspiration</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline bg-surface-container-high px-2 py-0.5 rounded">88 MB RAM</span>
+<button class="single-close-btn p-1 rounded hover:bg-error-container text-outline hover:text-error transition-colors" title="Drop redundant tab">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-space-md relative z-10">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Filtered Search Results</h2>
+<span class="font-body-sm text-body-sm text-outline">(6 matches matching “<span class="text-secondary font-code-sm text-code-sm">arxiv OR github</span>”)</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high p-1 rounded-xl" id="batchToolbar">
+<div class="flex items-center gap-2 px-space-sm">
+<input class="rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-outline">Select All (6)</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/40"></div>
+<button class="h-7 px-space-xs rounded bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-xs">drive_file_move</span> Move Selected
+          </button>
+<button class="h-7 px-space-xs rounded bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-xs">label</span> Add Tag
+          </button>
+<button class="h-7 px-space-xs rounded bg-error-container/40 hover:bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-xs">delete</span> Bulk Delete
+          </button>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low shadow-sm overflow-hidden">
+<div class="grid grid-cols-12 gap-space-sm px-space-md py-space-sm bg-surface-container-high font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<div class="col-span-1 flex items-center gap-2">
+<span>#</span>
+</div>
+<div class="col-span-6 flex items-center gap-2">
+<span>Title &amp; URL</span>
+</div>
+<div class="col-span-2">
+<span>Workspace</span>
+</div>
+<div class="col-span-1 text-center">
+<span>Duplicates</span>
+</div>
+<div class="col-span-2 text-right">
+<span>Last Saved</span>
+</div>
+</div>
+<div class="divide-y-0 space-y-0.5 p-space-xs" id="resultsList">
+<div class="grid grid-cols-12 gap-space-sm items-center px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<div class="col-span-1 flex items-center gap-2">
+<input class="result-item-cb rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<img class="w-4 h-4 rounded object-contain shrink-0" data-alt="Official arXiv Cornell University academic logo favicon square icon minimal dark mode" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMzefF-4b7GdxaPFiQr9c4X_S4gfjDCrT-pLPmQbPdIhsFIx7Tts2VAgdBhry8IVxbSW0Qlnymo24od994rPcDGLKb39axDxqNLqWCWqpwnJJFQVCpwYKZlm6JG4VfSQAboPhCuXspOsHcBNZduIQ6TvynzFUQwW1gnqcWqEajlm3127XDaRwR3JCToMy1tIhHJ6amvTfmuOlpIVggOERs3-cFgtp4KfYasT4A_inH"/>
+</div>
+<div class="col-span-6 min-w-0 pr-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium truncate flex items-center gap-1.5">
+<span>Demonstration of fault-tolerant quantum error correction</span>
+<span class="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-on-surface">open_in_new</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate">
+                https://<span class="bg-secondary/20 text-secondary font-bold px-1 rounded">arxiv</span>.org/abs/2304.09821
+              </div>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                College Research
+              </span>
+</div>
+<div class="col-span-1 text-center">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-code-sm text-code-sm font-semibold">
+                4×
+              </span>
+</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-outline">
+              12 mins ago
+            </div>
+</div>
+<div class="grid grid-cols-12 gap-space-sm items-center px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<div class="col-span-1 flex items-center gap-2">
+<input class="result-item-cb rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<img class="w-4 h-4 rounded object-contain shrink-0" data-alt="GitHub inverted silhouette logo mark on dark rounded background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWGibf0KfGPo8BWZgu_2yZAvFM9La3UD9pO3E2tgatox84lDjeI03cqtaLcRX72rOtjpSyELeZczAwXWktoWmUOhRTJgVEEFwR_2re7njrucpFY1hJsZFyzzfvDcZLb3c8ugBgTf0gUzR3ZOMnLx5uMuMVimaal-S31kV2FT7QBUJHxzPhOKtvrMQcATI8t7cXLsaGF7HCLjzsy-CzFevFg91WTTYyI5CGdga40PIW"/>
+</div>
+<div class="col-span-6 min-w-0 pr-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium truncate flex items-center gap-1.5">
+<span>astral-sh/uv: An extremely fast Python package and project manager</span>
+<span class="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-on-surface">open_in_new</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate">
+                https://<span class="bg-secondary/20 text-secondary font-bold px-1 rounded">github</span>.com/astral-sh/uv
+              </div>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Dev &amp; Eng
+              </span>
+</div>
+<div class="col-span-1 text-center">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-code-sm text-code-sm font-semibold">
+                3×
+              </span>
+</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-outline">
+              Today 9:15 AM
+            </div>
+</div>
+<div class="grid grid-cols-12 gap-space-sm items-center px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<div class="col-span-1 flex items-center gap-2">
+<input class="result-item-cb rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<img class="w-4 h-4 rounded object-contain shrink-0" data-alt="Official arXiv Cornell University academic logo favicon square icon minimal dark mode" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ZrORbAnHNS6ki9g3d642c9ZQs3UGvM1tla8KfRx31OKbhdyQ5uXI9DWoKGPZ9fCl2pclT2ijHn55VbLsfhBV1sKkl6eaRP8mtHOUYIYtadUZpEiRYnxGMT5kae0SEADMp3wW_dMnBz0gItYbHgUYeBIyVVrIcv5R2PI90SF18cksl5xvsJ6m6axQmFeH2xCfb_5rg38FOI4RInApAod6zP__w-UVF6uqibLbbAVg"/>
+</div>
+<div class="col-span-6 min-w-0 pr-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium truncate flex items-center gap-1.5">
+<span>FlashAttention-3: Fast and Accurate Attention with Asynchrony</span>
+<span class="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-on-surface">open_in_new</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate">
+                https://<span class="bg-secondary/20 text-secondary font-bold px-1 rounded">arxiv</span>.org/abs/2407.08608
+              </div>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                College Research
+              </span>
+</div>
+<div class="col-span-1 text-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-code-sm">
+                1×
+              </span>
+</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-outline">
+              Yesterday
+            </div>
+</div>
+<div class="grid grid-cols-12 gap-space-sm items-center px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<div class="col-span-1 flex items-center gap-2">
+<input class="result-item-cb rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<img class="w-4 h-4 rounded object-contain shrink-0" data-alt="GitHub inverted silhouette logo mark on dark rounded background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkS3MILdlRCgbffhc1sfD1QA3JIVB1KFPU6TUXta8y2uaEpzDPqnZVAoGym5u5im6tS8lXiXCbSR3uwPW53Lrg3WkhI7xfdkvzVtIFF1AKenih5-Xf6XQi70mLrE6JI5dRZhbD6ZE58B3v77eLeYRsVn24df0AxQYunhRh10sWryjZ8S4VhpbT3oQhZxvkN7Bv9ieL0SXsoUFRdwvzTqoQSdGnE4L7hIbbZY7SDsOA"/>
+</div>
+<div class="col-span-6 min-w-0 pr-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium truncate flex items-center gap-1.5">
+<span>shadcn-ui/ui: Beautifully designed components that you can copy and paste</span>
+<span class="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-on-surface">open_in_new</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate">
+                https://<span class="bg-secondary/20 text-secondary font-bold px-1 rounded">github</span>.com/shadcn-ui/ui
+              </div>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Dev &amp; Eng
+              </span>
+</div>
+<div class="col-span-1 text-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-code-sm">
+                1×
+              </span>
+</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-outline">
+              3 days ago
+            </div>
+</div>
+<div class="grid grid-cols-12 gap-space-sm items-center px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<div class="col-span-1 flex items-center gap-2">
+<input class="result-item-cb rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<img class="w-4 h-4 rounded object-contain shrink-0" data-alt="GitHub inverted silhouette logo mark on dark rounded background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHLmRaDpX9opEEbLQ2MhCkb9CQLU_Ib6D90BoTgWYyNpU4I7J0yqEv4bB2cvnB_VwHiZkYZ7EDHLQI1IMmUDB4OU-daV08AVRWpz5KhDW79_TfvZxPxUZTHpY-J5YLgugDGWyWxKH8gWg741w9h5hPa9qbsqBQ1Ej5qWlPpGH6DNrYiry5IwaMmnnQQJ2jT2MnB3ysY_XkvVffAz89mzBklDIh6lM4vkmDO8XwnSJ2"/>
+</div>
+<div class="col-span-6 min-w-0 pr-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium truncate flex items-center gap-1.5">
+<span>karpathy/nanoGPT: The simplest, fastest repository for training/finetuning medium GPTs</span>
+<span class="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-on-surface">open_in_new</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate">
+                https://<span class="bg-secondary/20 text-secondary font-bold px-1 rounded">github</span>.com/karpathy/nanoGPT
+              </div>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                College Research
+              </span>
+</div>
+<div class="col-span-1 text-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-code-sm">
+                1×
+              </span>
+</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-outline">
+              5 days ago
+            </div>
+</div>
+<div class="grid grid-cols-12 gap-space-sm items-center px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors">
+<div class="col-span-1 flex items-center gap-2">
+<input class="result-item-cb rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<img class="w-4 h-4 rounded object-contain shrink-0" data-alt="GitHub inverted silhouette logo mark on dark rounded background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzLLETManxdDuPOjb4dvGGnq4YVlNqFZvoR-SUUESC1y7qqhar85XkUE1oW8_ToFjCXFE7ONzwAvnEgSQvUDwSYn4eZb-NoRi8k0NaZN8_WGCGI758Impjxf0_yn4btAWiTR2S2YPRLIcu8Neig8ZFKYdcWty7bqkLw4ZQEe-rsa8ujgF3qJuqai7jq_ix7m7kVX_vFh_eDaOvWpopIEmKRXTwJMT46m6YxCwYrvMr"/>
+</div>
+<div class="col-span-6 min-w-0 pr-space-md">
+<div class="font-body-md text-body-md text-on-surface font-medium truncate flex items-center gap-1.5">
+<span>vllm-project/vllm: A high-throughput and memory-efficient LLM inference engine</span>
+<span class="material-symbols-outlined text-xs text-outline cursor-pointer hover:text-on-surface">open_in_new</span>
+</div>
+<div class="font-code-sm text-code-sm text-outline truncate">
+                https://<span class="bg-secondary/20 text-secondary font-bold px-1 rounded">github</span>.com/vllm-project/vllm
+              </div>
+</div>
+<div class="col-span-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Dev &amp; Eng
+              </span>
+</div>
+<div class="col-span-1 text-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-code-sm">
+                1×
+              </span>
+</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-outline">
+              2 weeks ago
+            </div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-high/60 flex items-center justify-between text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span>Showing 6 of 148 indexed items</span>
+<span class="text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">bolt</span> Search time: 4.2ms
+            </span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-outline hover:text-on-surface" disabled="">Prev</button>
+<span class="px-2 py-1 rounded bg-primary/20 text-primary font-semibold">1</span>
+<button class="px-2 py-1 rounded bg-surface-container text-outline hover:text-on-surface">Next</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="fixed bottom-6 right-6 px-space-md py-space-sm rounded-xl bg-surface-container-highest/95 backdrop-blur-xl text-on-surface font-label-md text-label-md flex items-center gap-space-sm shadow-xl transition-all duration-300 translate-y-24 opacity-0 z-50 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-base" id="toastIcon">check_circle</span>
+<span id="toastText">Action completed successfully.</span>
+</div>
+<script>
+    (function () {
+      const searchInput = document.getElementById('searchInput');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+      const toast = document.getElementById('toastNotification');
+      const toastText = document.getElementById('toastText');
+      const selectAll = document.getElementById('selectAllCheckbox');
+      const resultCheckboxes = document.querySelectorAll('.result-item-cb');
+      const cleanAllBtn = document.getElementById('cleanAllDuplicatesBtn');
+      const resolveAutoBtn = document.getElementById('resolveAllAutoBtn');
+
+      function showToast(message, icon = 'check_circle') {
+        if (!toast) return;
+        toastText.textContent = message;
+        const toastIcon = document.getElementById('toastIcon');
+        if (toastIcon) toastIcon.textContent = icon;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 2800);
+      }
+
+      if (clearSearchBtn && searchInput) {
+        clearSearchBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          searchInput.focus();
+          showToast('Search query cleared');
+        });
+      }
+
+      if (selectAll) {
+        selectAll.addEventListener('change', (e) => {
+          resultCheckboxes.forEach(cb => {
+            cb.checked = e.target.checked;
+          });
+        });
+      }
+
+      document.querySelectorAll('.keep-latest-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          const clusterEl = document.getElementById(targetId);
+          if (clusterEl) {
+            clusterEl.style.transition = 'all 0.4s ease';
+            clusterEl.style.opacity = '0.3';
+            clusterEl.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+              clusterEl.remove();
+              showToast('Cluster cleaned: Retained latest copy & released memory');
+            }, 300);
+          }
+        });
+      });
+
+      document.querySelectorAll('.cluster-action-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          showToast('Tags and annotations merged into primary tab.');
+        });
+      });
+
+      document.querySelectorAll('.single-close-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const row = e.target.closest('.flex');
+          if (row) {
+            row.style.transition = 'all 0.2s ease';
+            row.style.opacity = '0';
+            setTimeout(() => row.remove(), 200);
+            showToast('Redundant tab instance closed');
+          }
+        });
+      });
+
+      if (cleanAllBtn) {
+        cleanAllBtn.addEventListener('click', () => {
+          const container = document.getElementById('clustersContainer');
+          if (container) {
+            container.innerHTML = `
+              <div class="p-space-lg rounded-xl bg-surface-container-low text-center space-y-space-xs">
+                <span class="material-symbols-outlined text-3xl text-tertiary">task_alt</span>
+                <div class="font-headline-sm text-headline-sm text-on-surface">All Duplicates Resolved</div>
+                <div class="font-body-md text-body-md text-on-surface-variant">Freed 420.4 MB of browser memory across 3 clusters. 16 redundant tabs archived.</div>
+              </div>
+            `;
+          }
+          showToast('All clusters successfully deduplicated! (+420 MB RAM)', 'bolt');
+        });
+      }
+
+      if (resolveAutoBtn) {
+        resolveAutoBtn.addEventListener('click', () => {
+          cleanAllBtn?.click();
+        });
+      }
+
+      const exportBtn = document.getElementById('exportBtn');
+      if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+          showToast('Exported results to tabvault-search-export.json', 'file_download');
+        });
+      }
+
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'search-duplicate-finder') {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        }
+      });
+    })();
+  </script>
+</div></main></div></body></html>

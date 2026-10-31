@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TabVault — Smart Browser Tab Manager</title>
+  <meta name="description" content="Save tabs, organize collections and restore sessions. Local-first Chrome extension. No account, no tracking.">
+  <link rel="icon" href="assets/icon32.png">
+  <meta name="theme-color" content="#090d16">
+  <meta property="og:type" content="website"><meta property="og:title" content="TabVault — Smart Browser Tab Manager">
+  <meta property="og:description" content="Local-first Chrome extension: save tabs, organize collections, restore sessions. Try the live demo.">
+  <meta property="og:image" content="assets/hero-dashboard.png"><meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><img src="assets/icon48.png" alt="" width="28" height="28"> TabVault</a>
+    <nav><a href="#demo">Live demo</a><a href="#features">Features</a><a href="#install">Install</a><a class="btn" href="https://github.com/tanishqmehra22/tabvault">GitHub</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Chrome extension · Manifest V3</p>
+      <h1>Turn tab chaos into a vault you control.</h1>
+      <p class="lead">Save tabs, organize them into collections, and restore whole browsing sessions in one click. Everything stays on your device: no account, no sync, no tracking.</p>
+      <div class="cta">
+        <a class="btn primary" href="tabvault-extension.zip" download>Download extension (.zip)</a>
+        <a class="btn" href="demo/dashboard.html#tabs">Try the live dashboard</a>
+      </div>
+      <p class="fine">Open source. Load unpacked in Chrome 120+. See <a href="#install">install steps</a>.</p>
+      <a class="shot" href="demo/dashboard.html#tabs"><img src="assets/hero-dashboard.png" alt="TabVault dashboard showing saved tabs as cards with collections and filters" width="1440" height="900"></a>
+      <ul class="stack" aria-label="Built with"><li>Manifest V3</li><li>Vanilla JavaScript</li><li>Chrome Tabs &amp; Storage APIs</li><li>HTML5 / CSS3</li><li>UI designed in Google Stitch</li><li>Tested with node:test &amp; Playwright</li></ul>
+    </section>
+
+    <section id="demo" class="demo">
+      <h2>Live demo</h2>
+      <p class="muted">These are the real popup and dashboard pages running on sample data. Your changes are kept only in this browser and never sent anywhere.</p>
+      <div class="frame dash"><div class="cap"><span>Dashboard</span><a href="demo/dashboard.html#tabs">open full screen ↗</a></div><iframe src="demo/dashboard.html#tabs" title="TabVault dashboard demo" loading="lazy"></iframe></div>
+      <div class="popup-row">
+        <div class="frame popup"><div class="cap"><span>Popup (380 px)</span></div><iframe src="demo/popup.html" title="TabVault popup demo" loading="lazy"></iframe></div>
+        <div class="try"><h3>Things to try</h3><ul><li>Click <strong>Save All Tabs</strong> in the popup, then watch the dashboard update.</li><li>Search for “rust”, “css” or “paper”.</li><li>Create a collection and move a tab into it.</li><li>Save a session, then restore it.</li><li>Switch to the light theme in Settings.</li><li>Export your data as JSON.</li></ul></div>
+      </div>
+      <p class="fine"><button id="reset" class="link" type="button">Reset demo data</button></p>
+    </section>
+
+    <section id="features" class="features">
+      <h2>What it does</h2>
+      <div class="cards">
+        <article><h3>Save in one click</h3><p>Save the current tab or the whole window into a collection. Chrome-internal pages are skipped automatically.</p></article>
+        <article><h3>Collections</h3><p>Group tabs by project or topic. Rename, move, restore a whole collection in a new window.</p></article>
+        <article><h3>Sessions</h3><p>Snapshot a window with a name and timestamp, then bring it back whenever you need it.</p></article>
+        <article><h3>Search &amp; filter</h3><p>Find by title, URL or domain. Filter by collection and date, sort, favorite, grid or list.</p></article>
+        <article><h3>Duplicate finder</h3><p>Spots repeated URLs even with tracking parameters. Keeps the newest copy and always asks first.</p></article>
+        <article><h3>Private by design</h3><p>Data lives in <code>chrome.storage.local</code>. Import and export JSON. Only <code>tabs</code> and <code>storage</code> permissions.</p></article>
+      </div>
+    </section>
+
+    <section id="install" class="install">
+      <h2>Install</h2>
+      <ol>
+        <li><a href="tabvault-extension.zip" download>Download the ZIP</a> and unzip it.</li>
+        <li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong>.</li>
+        <li>Click <strong>Load unpacked</strong> and select the unzipped <code>tabvault-extension</code> folder (the one containing <code>manifest.json</code>).</li>
+        <li>Pin TabVault from the puzzle-piece menu.</li>
+      </ol>
+    </section>
+  </main>
+  <footer><span>TabVault · local-first · <a href="https://github.com/tanishqmehra22/tabvault">source on GitHub</a></span></footer>
+  <script src="landing.js"></script>
+</body>
+</html>

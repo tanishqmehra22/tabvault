@@ -1,0 +1,16 @@
+{
+  "name": "tabvault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "for f in extension/js/*.js; do node --check \"$f\" || exit 1; done",
+    "icons": "node tools/make-icons.mjs",
+    "harness": "node tests/harness/serve.mjs",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}

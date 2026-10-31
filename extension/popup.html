@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=380">
+  <title>TabVault</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body class="popup">
+  <header class="top">
+    <img src="assets/icon32.png" alt="" width="24" height="24">
+    <h1>TabVault</h1>
+    <span id="openCount" class="pill">– open</span>
+    <button id="settingsBtn" class="ibtn" title="Settings" aria-label="Settings" type="button"></button>
+  </header>
+  <main>
+    <button id="saveAll" class="btn primary big" type="button"></button>
+    <button id="saveCurrent" class="btn ghost-wide" type="button"></button>
+    <div class="search"><span id="searchIcon"></span><input id="q" class="input" type="search" placeholder="Search open &amp; saved tabs…" aria-label="Search open and saved tabs" autocomplete="off"></div>
+    <section>
+      <div class="sec"><span>Save to collection</span><button id="manage" class="link" type="button">Manage</button></div>
+      <div id="chips" class="chips" role="radiogroup" aria-label="Collection to save into"></div>
+    </section>
+    <section>
+      <div class="sec"><span id="listTitle">Recently saved</span></div>
+      <div id="list" class="list"></div>
+    </section>
+  </main>
+  <footer>
+    <button id="restoreLast" class="btn" type="button"></button>
+    <button id="openDash" class="btn" type="button"></button>
+  </footer>
+  <script type="module" src="js/popup.js"></script>
+</body>
+</html>

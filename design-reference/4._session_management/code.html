@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#00424e","error-container":"#93000a","on-tertiary-container":"#00311f","primary":"#adc6ff","surface-variant":"#2d3449","outline-variant":"#424754","on-surface":"#dae2fd","primary-fixed-dim":"#adc6ff","tertiary-fixed":"#6ffbbe","inverse-primary":"#005ac2","on-primary-fixed":"#001a42","surface-container":"#171f33","surface-tint":"#adc6ff","surface-container-high":"#222a3d","tertiary":"#4edea3","on-primary-container":"#00285d","surface-container-lowest":"#060e20","outline":"#8c909f","tertiary-fixed-dim":"#4edea3","inverse-on-surface":"#283044","on-tertiary":"#003824","on-primary":"#002e6a","secondary-fixed-dim":"#4cd7f6","on-error":"#690005","secondary-container":"#03b5d3","on-secondary-fixed-variant":"#004e5c","surface-bright":"#31394d","on-tertiary-fixed":"#002113","error":"#ffb4ab","background":"#0b1326","on-surface-variant":"#c2c6d6","on-primary-fixed-variant":"#004395","surface-container-highest":"#2d3449","inverse-surface":"#dae2fd","surface-container-low":"#131b2e","tertiary-container":"#00a572","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#005236","on-secondary-fixed":"#001f26","primary-fixed":"#d8e2ff","on-background":"#dae2fd","surface-dim":"#0b1326","secondary":"#4cd7f6","primary-container":"#4d8eff","on-secondary":"#003640","secondary-fixed":"#acedff","surface":"#0b1326"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","margin-compact":"0.75rem","space-xs":"0.25rem","space-xl":"2rem","space-lg":"1.25rem","space-md":"0.75rem","gutter-compact":"0.5rem","gutter":"1rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"code-sm":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["14px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"code-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container/40"><div class="flex items-center gap-space-sm"><img alt="TabVault Geometric Vault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgLXQHtO7A5BAd8lUHKeDNWF6invRq5ptAUvFvWHCvnvAHOUniz3_vaviO8j8YQuiFVM-RGMD9sH5sNU_RAWsk7Vg4Bhg99XTqTFqdYKbMw6rVMp-KIvIt4oA05Zy-pr0-5MFScXSnmqbKB756eGhlBDJnqEyyb3b7gTvkvc87_2eRtZtB7UlTmvWirZGTF9Bjl70t_L6AVuBQXBd7aLzoZjCLhcMq2rIscFxPdYwk"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">TabVault</span></div><span class="material-symbols-outlined text-outline text-lg cursor-pointer hover:text-on-surface transition-colors">keyboard_double_arrow_left</span></div><div class="p-space-md"><button class="w-full flex items-center justify-between p-space-sm rounded-xl bg-surface-container-high/60 hover:bg-surface-container-highest transition-colors text-left"><div class="flex items-center gap-space-sm min-w-0"><div class="w-6 h-6 rounded bg-primary/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-sm">folder_special</span></div><div class="truncate"><div class="font-label-sm text-label-sm text-on-surface truncate">Alex's Research Vault</div><div class="font-label-sm text-label-sm text-tertiary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Active Workspace</div></div></div><span class="material-symbols-outlined text-outline text-sm">unfold_more</span></button><div class="mt-space-sm grid grid-cols-2 gap-space-xs"><div class="p-space-xs rounded-lg bg-surface-container/60 text-center"><div class="font-label-sm text-label-sm text-outline">Tabs Saved</div><div class="font-headline-sm text-headline-sm text-primary">148</div></div><div class="p-space-xs rounded-lg bg-surface-container/60 text-center"><div class="font-label-sm text-label-sm text-outline">Sessions</div><div class="font-headline-sm text-headline-sm text-secondary">12</div></div></div></div><nav class="px-space-md space-y-space-xs flex-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="all-saved-tabs" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">tab</span><span class="font-body-md text-body-md">All Saved Tabs</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">148</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="collections" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">collections_bookmark</span><span class="font-body-md text-body-md">Collections</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">5</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sessions" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">history</span><span class="font-body-md text-body-md">Sessions</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="favorites" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">star</span><span class="font-body-md text-body-md">Favorites</span></div><span class="px-1.5 py-0.5 rounded-full bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant">24</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="search-duplicate-finder" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">find_replace</span><span class="font-body-md text-body-md">Search &amp; Duplicate Finder</span></div><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">⌘K</kbd></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-lowest/70 backdrop-blur-md"><div class="flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container/50 hover:bg-surface-container-high/60 transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_hXtio56QjdNhml6dKNjbmOfhEp3oUNe3sHSekAq9M5K4F-QaUbGbS-u9EFsjxUF7IISH4JLU10_fk7rt7dRQEv12ekYkzWHgDUyxoHVcG0_Krof8HPMnT8McPmNRjBDm8btxOm5ur6pDR-WNfsavslLH1m5fSWZ5aXfOWJoPuO1TMG_-W1vFsSD0E2zSS9kmx21MqDJAHsonzhd5e3hB7pXXyU9G_BjdpE49MbGs"/><div class="min-w-0 flex-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Alex Vance</span><span class="material-symbols-outlined text-outline text-xs cursor-pointer hover:text-on-surface">more_vert</span></div><div class="font-label-sm text-label-sm text-secondary truncate">Pro Vault Active</div></div></div><div class="mt-space-xs flex items-center justify-between px-space-xs text-outline font-label-sm text-label-sm"><div class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-xs">lock</span><span>Local-First Encrypted</span></div><span class="material-symbols-outlined text-xs text-outline">cloud_done</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-base">search</span><input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Filter active workspace, domains, or tabs..." type="text"/><div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1"><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">⌘F</kbd></div></div></div><div class="flex items-center gap-space-md shrink-0"><button class="h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors"><span class="material-symbols-outlined text-sm text-secondary">preview</span><span>Open Extension Popup</span></button><button class="h-9 px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim font-label-md text-label-md font-semibold flex items-center gap-space-xs transition-colors shadow-sm"><span class="material-symbols-outlined text-sm font-bold">add</span><span>+ Quick Save Current Window</span></button><div class="h-5 w-px bg-outline-variant/40 mx-space-xs"></div><div class="flex items-center gap-space-xs"><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-base">notifications</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-base">help</span></button></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Radial Chromatic Glow Overlays -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 right-10 w-[30rem] h-[30rem] bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="px-space-lg py-space-md space-y-space-lg">
+<!-- Breadcrumbs & Header Bar -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-outline font-code-sm text-code-sm uppercase tracking-wider">
+<span class="text-secondary font-semibold">TAB VAULT SESSIONS</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">HISTORY_TIMELINE</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            SYNC_OK
+          </span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Browsing Sessions</h1>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md">12 Saved Sessions</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">memory</span>
+                5.9 GB Total Memory Reclaimed
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              Snapshot entire browser windows across devices. Restore complete environments with pinned tabs, tab groups, and window geometry intact.
+            </p>
+</div>
+<!-- Quick Actions & Settings -->
+<div class="flex items-center gap-space-xs flex-wrap self-start lg:self-center">
+<div class="relative">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all" id="autoSnapshotBtn">
+<span class="material-symbols-outlined text-sm text-secondary">autorenew</span>
+<span>Auto-Snapshot: Every 2h</span>
+<span class="material-symbols-outlined text-xs text-outline">expand_more</span>
+</button>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-gradient-to-r from-primary-container via-primary to-secondary text-on-primary-container font-label-md text-label-md font-semibold flex items-center gap-space-xs shadow-md hover:opacity-95 transition-all">
+<span class="material-symbols-outlined text-sm font-bold">bolt</span>
+<span>Save Active Window Now</span>
+<kbd class="ml-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/40 font-code-sm text-code-sm">⌘⇧S</kbd>
+</button>
+</div>
+</div>
+</div>
+<!-- Active / Recent Session Restore Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-xl">history_toggle_off</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Active Restored Session</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">ML Paper Sprint</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              18 tabs restored 24m ago in Chrome Window 2 • Memory consumption: ~980 MB
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">archive</span>
+<span>Re-archive Window</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-error font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">undo</span>
+<span>Undo Restore</span>
+</button>
+</div>
+</div>
+<!-- Search & Timeline Filter Strip -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm pt-space-xs">
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-base">filter_list</span>
+<input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none" placeholder="Filter snapshots by title, group, or domain..." type="text"/>
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-outline">ESC</kbd>
+</div>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 sm:pb-0">
+<span class="font-label-sm text-label-sm text-outline mr-1">Sort:</span>
+<button class="px-2.5 py-1 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">Newest First</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Most Tabs</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">Most RAM Saved</button>
+</div>
+</div>
+<!-- MAIN TIMELINE SECTION -->
+<div class="space-y-space-xl">
+<!-- TIMELINE GROUP: TODAY -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm font-bold tracking-wider uppercase">Today</span>
+<div class="h-px flex-1 bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm text-outline">1 snapshot • 1.6 GB liberated</span>
+</div>
+<!-- CARD 1: Deep Work (Expanded / Featured Inspection) -->
+<div class="rounded-xl bg-surface-container-low shadow-sm overflow-hidden transition-all duration-200">
+<!-- Session Summary Header -->
+<div class="p-space-md bg-surface-container/60 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Morning Deep Work — Distributed Systems</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Chrome Window 1</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm">● 1.6 GB RAM Liberated</span>
+</div>
+<div class="flex items-center gap-space-md text-outline font-label-sm text-label-sm">
+<span>Today, 9:15 AM (3h ago)</span>
+<span>•</span>
+<span>28 Tabs Across 4 Tab Groups</span>
+<span>•</span>
+<span class="text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">shield</span>
+                    AES-256 Encrypted
+                  </span>
+</div>
+</div>
+<!-- Top Macro Buttons -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="h-8 px-space-md rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-sm font-bold">open_in_browser</span>
+<span>Restore Complete Window (28 Tabs)</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" id="toggleDrawerBtn">
+<span class="material-symbols-outlined text-sm">visibility</span>
+<span>Inspect Tabs</span>
+<span class="material-symbols-outlined text-xs" id="inspectIcon">expand_less</span>
+</button>
+<div class="relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tab Groups Color Preview Strip -->
+<div class="px-space-md py-space-sm bg-surface-container-lowest/50 flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Groups:</span>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-secondary/15 text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Raft Consensus (8 tabs)</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-tertiary/15 text-tertiary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Overleaf Paper (4 tabs)</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-primary-container/20 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>GitHub PRs (6 tabs)</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Ungrouped References (10 tabs)</span>
+</div>
+</div>
+<!-- EMBEDDED INSPECT BREAKDOWN PANEL -->
+<div class="p-space-md bg-surface-container-lowest/90 space-y-space-md" id="sessionBreakdown">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tab Group Inspector &amp; Selective Restore</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select individual tabs or restore specific groups into an existing window.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">select_all</span>
+<span>Select All</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+<span>Restore Selected (6 tabs)</span>
+</button>
+</div>
+</div>
+<!-- Group Breakdown Container -->
+<div class="space-y-space-md">
+<!-- Group 1: Raft Consensus (Blue group) -->
+<div class="rounded-lg bg-surface-container-low p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs py-1">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded bg-surface-container text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Raft Consensus Implementation</span>
+<span class="font-code-sm text-code-sm text-outline">(8 tabs • ~480 MB)</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline">Restore Group Only</button>
+</div>
+<!-- Tab rows -->
+<div class="space-y-1">
+<div class="flex items-center justify-between p-space-xs rounded-md bg-surface-container/60 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="rounded bg-surface-container text-secondary" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-secondary">code</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface truncate">ongardie/raft.tla: Formal TLA+ specification for Raft consensus algorithm</span>
+<span class="font-label-sm text-label-sm text-outline truncate hidden md:inline">github.com</span>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline">74 MB</span>
+<span class="material-symbols-outlined text-sm text-outline hover:text-on-surface cursor-pointer">open_in_new</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-md bg-surface-container/60 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="rounded bg-surface-container text-secondary" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-primary">description</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface truncate">In Search of an Understandable Consensus Algorithm (Extended Version)</span>
+<span class="font-label-sm text-label-sm text-outline truncate hidden md:inline">raft.github.io</span>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline">112 MB</span>
+<span class="material-symbols-outlined text-sm text-outline hover:text-on-surface cursor-pointer">open_in_new</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-md bg-surface-container/60 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="rounded bg-surface-container text-secondary" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-secondary">terminal</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface truncate">hashicorp/raft: Golang implementation of the Raft consensus protocol</span>
+<span class="font-label-sm text-label-sm text-outline truncate hidden md:inline">pkg.go.dev</span>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline">58 MB</span>
+<span class="material-symbols-outlined text-sm text-outline hover:text-on-surface cursor-pointer">open_in_new</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Group 2: Overleaf Paper (Emerald group) -->
+<div class="rounded-lg bg-surface-container-low p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs py-1">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded bg-surface-container text-tertiary focus:ring-0 cursor-pointer" type="checkbox"/>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Overleaf Draft &amp; Bibliography</span>
+<span class="font-code-sm text-code-sm text-outline">(4 tabs • ~310 MB)</span>
+</div>
+<button class="font-label-sm text-label-sm text-tertiary hover:underline">Restore Group Only</button>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between p-space-xs rounded-md bg-surface-container/60 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="rounded bg-surface-container text-tertiary" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-tertiary">edit_document</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface truncate">Overleaf: Byzantine Quorums in Disconnected Meshes (v3 Revision)</span>
+<span class="font-label-sm text-label-sm text-outline truncate hidden md:inline">overleaf.com</span>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline">184 MB</span>
+<span class="material-symbols-outlined text-sm text-outline hover:text-on-surface cursor-pointer">open_in_new</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-md bg-surface-container/60 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="rounded bg-surface-container text-tertiary" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xs text-secondary">bookmark</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface truncate">Zotero Web Library: Systems Architecture Citations</span>
+<span class="font-label-sm text-label-sm text-outline truncate hidden md:inline">zotero.org</span>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<span class="font-code-sm text-code-sm text-outline">42 MB</span>
+<span class="material-symbols-outlined text-sm text-outline hover:text-on-surface cursor-pointer">open_in_new</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Group 3: Ungrouped Tabs (16 Tabs Collapsed Note) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+<span>16 additional ungrouped tabs collapsed (ACM Digital Library, Hacker News, ArXiv...)</span>
+</div>
+<button class="text-primary hover:underline font-semibold">Expand All 16 Tabs</button>
+</div>
+</div>
+<!-- Storage & Sync Metadata Footer -->
+<div class="pt-space-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs text-outline font-code-sm text-code-sm border-t border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary">database</span>
+<span>Encrypted &amp; Stored in Chrome.storage.local • 100% Offline Accessible</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="hover:text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">download</span> Export JSON
+                  </button>
+<span>•</span>
+<button class="hover:text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">delete_outline</span> Delete Snapshot
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TIMELINE GROUP: YESTERDAY -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm font-bold tracking-wider uppercase">Yesterday</span>
+<div class="h-px flex-1 bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm text-outline">1 snapshot • 820 MB liberated</span>
+</div>
+<!-- CARD 2: Job Hunt & Portfolio Review -->
+<div class="rounded-xl bg-surface-container-low shadow-sm p-space-md space-y-space-md hover:bg-surface-container-low/90 transition-colors">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Job Hunt &amp; Portfolio Review</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Chrome Window 2</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm">820 MB RAM Liberated</span>
+</div>
+<div class="flex items-center gap-space-md text-outline font-label-sm text-label-sm">
+<span>Yesterday, 6:40 PM</span>
+<span>•</span>
+<span>16 Tabs • 2 Tab Groups</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-sm text-secondary">open_in_browser</span>
+<span>Restore in New Window</span>
+</button>
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">folder_open</span>
+<span>Add to Collection...</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</div>
+<!-- Tab Favicons Preview Ribbon -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0">
+<span class="material-symbols-outlined text-xs text-primary">work</span>
+<span>Lever Jobs (Stripe)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0">
+<span class="material-symbols-outlined text-xs text-secondary">palette</span>
+<span>Figma — 2025 Portfolio Deck</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0">
+<span class="material-symbols-outlined text-xs text-tertiary">payments</span>
+<span>Stripe Documentation</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0">
+<span class="material-symbols-outlined text-xs text-outline">code</span>
+<span>GitHub Repositories</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0">
+<span class="material-symbols-outlined text-xs text-primary">description</span>
+<span>Notion Interview Tracker</span>
+</div>
+<span class="px-2 py-1 rounded-md bg-surface-container-high text-outline font-code-sm text-code-sm shrink-0">+ 11 more tabs</span>
+</div>
+</div>
+</div>
+<!-- TIMELINE GROUP: EARLIER THIS WEEK -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm font-bold tracking-wider uppercase">Earlier This Week</span>
+<div class="h-px flex-1 bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm text-outline">2 snapshots • 3.5 GB liberated</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- CARD 3: Rust Explorations -->
+<div class="rounded-xl bg-surface-container-low shadow-sm p-space-md flex flex-col justify-between gap-space-md hover:bg-surface-container-low/90 transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Weekend Tech Reading &amp; Rust</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm">2.1 GB Free</span>
+</div>
+<div class="text-outline font-label-sm text-label-sm">
+                  Sunday, Oct 27 • 34 Tabs in 3 Groups
+                </div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">Rust WebAssembly</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">Audio DSP</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">HN Links</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-high/60">
+<span class="font-code-sm text-code-sm text-outline">Chrome Window 1</span>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">open_in_browser</span>
+<span>Restore Window</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Figma Design Tokens -->
+<div class="rounded-xl bg-surface-container-low shadow-sm p-space-md flex flex-col justify-between gap-space-md hover:bg-surface-container-low/90 transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Figma Design Token Refactor Session</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm">1.4 GB Free</span>
+</div>
+<div class="text-outline font-label-sm text-label-sm">
+                  Friday, Oct 25 • 22 Tabs in 2 Groups
+                </div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">W3C Design Tokens Spec</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">Figma Variables</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-code-sm text-code-sm">Style-Dictionary</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container-high/60">
+<span class="font-code-sm text-code-sm text-outline">Chrome Window 3</span>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">open_in_browser</span>
+<span>Restore Window</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom System Telemetry Indicator -->
+<div class="pt-space-md pb-space-lg flex flex-col sm:flex-row items-center justify-between text-outline font-label-sm text-label-sm gap-space-sm border-t border-surface-container-high/40">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">cloud_sync</span>
+<span>Automatic Window Recovery Daemon: Running • Max retained history: 90 days</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="hover:text-on-surface cursor-pointer">Storage Usage: 14.8 MB / 5 GB</span>
+<span>•</span>
+<span class="text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Zero Cloud Telemetry
+          </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Ensure the Sessions link in the persistent App Shell sidebar is highlighted as active
+  document.addEventListener('DOMContentLoaded', () => {
+    try {
+      const sessionsLink = document.querySelector('aside nav a[data-path="sessions"]');
+      if (sessionsLink) {
+        sessionsLink.classList.remove('text-on-surface-variant');
+        sessionsLink.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        const badge = sessionsLink.querySelector('span:last-child');
+        if (badge) {
+          badge.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          badge.classList.add('bg-on-primary-container/20', 'text-on-primary-container');
+        }
+      }
+    } catch (e) {
+      console.warn('Sidebar nav highlight handler error:', e);
+    }
+
+    // Toggle Tab Breakdown Drawer
+    const toggleBtn = document.getElementById('toggleDrawerBtn');
+    const breakdown = document.getElementById('sessionBreakdown');
+    const inspectIcon = document.getElementById('inspectIcon');
+
+    if (toggleBtn && breakdown && inspectIcon) {
+      toggleBtn.addEventListener('click', () => {
+        const isHidden = breakdown.classList.contains('hidden');
+        if (isHidden) {
+          breakdown.classList.remove('hidden');
+          inspectIcon.textContent = 'expand_less';
+        } else {
+          breakdown.classList.add('hidden');
+          inspectIcon.textContent = 'expand_more';
+        }
+      });
+    }
+  });
+</script></main></div></body></html>
